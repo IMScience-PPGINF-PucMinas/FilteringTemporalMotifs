@@ -9,6 +9,14 @@ After the compilation you need to add our TemporalReduction.cpp/.h algorithm int
 You are free to call the funcion in any temporal graphlet kernel provided by the previous work.
 Example is provided in TemporalWedgeKernel.cpp.
 
+## Classification Task
+
+For the classification task we used the TUDataset benchmark available in: https://github.com/chrsmrrs/tudataset
+
+- The transitive reduction algorithm used was the one povided by sklearn lib. In "convertToTR.py" is the code used to read the temporal graph and replace the edges and edges labels according to the Transitive reduction removal.
+
+- For the classification task we used 2 different kernels, graphlet and Weisfeiler–Lehman kernels. The example is provided in "classification.py" file.
+
 ## Data Sets
 
 See [Benchmark Data Sets for Graph Kernels](https://graphlearning.io/) for data sets.
